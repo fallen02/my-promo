@@ -1,0 +1,109 @@
+---
+import Card from "./common/Card.astro"
+
+const services = [
+    {
+        title: "Website Development",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/webdev",
+        icon: ""
+    },
+    {
+        title: "Search Engine Optimization",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/seo",
+        icon: ""
+
+    },
+    {
+        title: "Social Media Marketing",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/marketing",
+        icon: ""
+
+    },
+    {
+        title: "Graphic Design",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/graphicsdesign",
+        icon: ""
+
+    },
+    {
+        title: "Lead Generation",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/leadgenaration",
+        icon: ""
+
+    },
+    {
+        title: "Marketing Automation",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/mautomation",
+        icon: ""
+
+    },
+    {
+        title: "AI Enhanced Optimization",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/mautomation",
+        icon: ""
+
+    },
+    {
+        title: "Content Writing",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/content",
+        icon: ""
+
+    },
+    {
+        title: "Content Marketing",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/cmarketing",
+        icon: ""
+
+    },
+    {
+        title: "Collab Membership",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/cmembership",
+        icon: ""
+
+    },
+    {
+        title: "Salesforce",
+        desc: "Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+        href: "/service/salesforce",
+        icon: ""
+
+    },
+    
+]
+---
+
+<section class="text-gray-400 body-font" id="idk">
+    <!-- <div class="hidden dark:block absolute top-0 inset-x-0 h-[37.5rem] bg-gradient-to-b from-[#0c1120] xl:top-8"></div> -->
+
+    <div class="container px-10 pt-20 pb-10 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h2 class="text-xs text-green-400 tracking-widest font-medium title-font mb-1">We Provide Solutions That Works</h2>
+            <h1 class="sm:text-4xl lg:text-5xl font-bold title-font mb-4 text-white">Our Services</h1>
+        </div>
+      <div class=" relative flex flex-wrap -m-4">
+        <div aria-hidden="true" class="absolute inset-0 hidden h-max dark:block lg:my-auto">
+            <div aria-hidden="true" class="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-6xl">
+                <div class="h-96 bg-gradient-to-br from-primary to-purple-400 blur-3xl dark:from-blue-700"></div>
+                <div class="h-96 rounded-full bg-gradient-to-r from-cyan-400 to-sky-300 blur-3xl dark:from-transparent dark:to-indigo-600"></div>
+            </div>
+        </div>
+        
+        {
+            services.map(service => (
+                <Card title={service.title} desc={service.desc} href={service.href} icon={service.icon}/>
+            ))
+        }
+      </div>
+      
+    </div>
+  </section>

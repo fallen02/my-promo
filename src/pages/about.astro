@@ -1,0 +1,162 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import pageHeader from '@/assets/images/page-header-shape-2.png'
+
+
+---
+
+<Layout title="About Us">
+    <section class="relative pt-16 sm:pt-8 md:py-0">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">We<span class="relative bg-gradient-to-r from-primaryLight to-secondaryLight bg-clip-text px-2 text-transparent dark:from-secondary dark:to-purple-300">Scaled !</span></h2>
+                <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need to mean growing pains. With best-of-breed features, security, privacy, and the right tool for every step of your journey - Jira Software allows you to scale without friction - regardless of your company size.</p>
+            </div>
+
+            <div class="relative mt-32 hidden h-40 w-40 items-center justify-center lg:mx-auto lg:flex">
+                <div class="it absolute inset-0 flex flex-wrap blur-3xl">
+                    <div aria-hidden="true" class="h-1/2 w-1/2 rounded-tl-full bg-primary"></div>
+                    <div aria-hidden="true" class="h-1/2 w-1/2 rounded-tr-full bg-purple-700"></div>
+                    <div aria-hidden="true" class="h-1/2 w-1/2 rounded-bl-full bg-secondary"></div>
+                    <div aria-hidden="true" class="h-1/2 w-1/2 rounded-br-full bg-secondaryLight"></div>
+                </div>
+                <div class="flex h-40 w-40 rounded-full border border-gray-900/20 bg-gray-900/10 dark:border-white/20 dark:bg-white/10">
+                    <svg class="relative m-auto h-12 w-auto text-white" viewBox="0 0 290 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M184.589 48.5615L259.174 177.176C271.689 198.757 264.34 226.397 242.76 238.912C221.862 251.03 195.284 244.523 182.258 224.504L168.033 245.393C189.368 269.831 225.685 276.557 254.799 259.673C287.846 240.509 299.1 198.183 279.936 165.136L204.374 34.8366C201.937 30.6351 199.126 26.7859 196.008 23.3066L184.589 48.5615Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M184.19 92.696L108.622 222.992C96.1058 244.572 68.4656 251.92 46.8855 239.405C25.3055 226.889 17.9575 199.249 30.4733 177.668L106.042 47.3721C118.558 25.792 146.198 18.444 167.778 30.9599C189.358 43.4757 196.706 71.116 184.19 92.696ZM85.2807 35.3313C104.447 2.28524 146.773 -8.96694 179.819 10.1989C212.865 29.3647 224.117 71.6908 204.951 104.737L129.383 235.033C110.217 268.079 67.8908 279.331 34.8447 260.166C1.79866 241 -9.45348 198.674 9.71234 165.628L85.2807 35.3313Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M108.622 222.992L184.19 92.696C196.706 71.116 189.358 43.4757 167.778 30.9599C146.198 18.444 118.558 25.792 106.042 47.3721L30.4733 177.668C17.9575 199.248 25.3054 226.889 46.8855 239.405C68.4656 251.92 96.1058 244.572 108.622 222.992ZM179.819 10.1989C146.773 -8.96694 104.447 2.28524 85.2807 35.3313L9.71233 165.628C-9.4535 198.674 1.79865 241 34.8447 260.166C67.8907 279.331 110.217 268.079 129.383 235.033L204.951 104.737C224.117 71.6908 212.865 29.3647 179.819 10.1989Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="pl-2">
+                <div class="relative py-32 before:absolute before:inset-0 before:mx-auto before:h-full before:w-px after:absolute after:inset-0 after:h-32 after:w-px after:bg-gradient-to-t after:from-gray-900/20 after:via-gray-200 after:before:to-gray-900 dark:after:from-white/20 dark:after:via-gray-800 lg:before:bg-gray-200 lg:after:mx-auto lg:after:bg-gradient-to-b lg:dark:before:bg-gray-900">
+                    <div class="relative flex flex-col items-center gap-10 pb-12 pl-6 before:absolute before:inset-0 before:h-1/2 before:w-px before:bg-gradient-to-b before:from-gray-400/70 before:to-gray-400/70 after:absolute after:inset-x-0 after:bottom-0 after:h-1/2 after:w-px after:border-r after:border-dashed after:border-gray-400/70 dark:before:from-gray-700 dark:before:to-gray-700 dark:after:border-gray-700 sm:pl-12 md:flex-row md:pb-20 lg:pl-0 lg:before:left-[9.1rem] lg:before:from-transparent lg:before:to-gray-400/70 lg:after:left-[9.1rem] dark:lg:before:from-transparent dark:lg:before:to-gray-700">
+                        <div class="flex w-full flex-col gap-10 md:w-1/2 lg:flex-row lg:items-center">
+                            <div class="hidden w-max md:block">
+                                <div class="h-24 w-24 rounded-full border border-gray-200 bg-white p-4 shadow-xl shadow-gray-600/10 dark:border-gray-800 dark:bg-gray-900 dark:shadow-none">
+                                    <img class="h-full w-full rounded-full object-cover object-top" src="./../images/avatars/avatar.webp" alt="user avatar" loading="lazy" width="400" height="400">
+                                </div>
+                            </div>
+
+                            <div aria-hidden="true" class="absolute top-[1.80rem] -left-2.5 z-[1] my-auto h-max w-max md:inset-y-0 lg:relative lg:ml-2.5 lg:-mr-2.5">
+                                <div class="h-5 w-5 rounded-full border-8 border-white bg-primary ring-1 ring-gray-400/70 dark:border-darker dark:bg-white dark:ring-gray-700"></div>
+                            </div>
+                            <div class="">
+                                <span class="text-gray-500">2019</span>
+                                <h3 class="mt-0.5 text-xl font-semibold text-gray-700 dark:text-white">Founded by Ariane Doe</h3>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <img class="h-56 w-full rounded-2xl object-cover md:h-80" src="./../images/steps/step1.webp" alt="timeline first step" loading="lazy" width="1165" height="864">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div aria-hidden="true" class="my-3.5 -ml-8 h-16 w-16 rotate-45 rounded-bl-full rounded-tr-3xl border border-dashed border-gray-400/70 dark:border-gray-700 lg:ml-[7.15rem]"></div>
+                        <span class="text-gray-700 dark:text-white">12 Satisfied <a href="customers.html" class="text-primary underline dark:text-primaryLight">Customers</a> !</span>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-10 py-12 pl-6 after:absolute after:inset-0 after:h-full after:w-px after:border-r after:border-dashed after:border-gray-400/70 dark:after:border-gray-700 sm:pl-12 md:flex-row md:py-20 lg:pl-0 lg:after:left-[9.1rem]">
+                        <div class="flex w-full flex-col gap-10 md:w-1/2 lg:flex-row lg:items-center">
+                            <div class="hidden w-max md:block">
+                                <div class="flex h-24 w-24 rounded-full border border-gray-200 bg-white p-4 shadow-xl shadow-gray-600/10 dark:border-gray-800 dark:bg-gray-900 dark:shadow-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-auto h-6 w-6 text-purple-600">
+                                        <path class="text-purple-300" d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 013.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0121 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 017.5 16.125V3.375z"></path>
+                                        <path d="M15 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0017.25 7.5h-1.875A.375.375 0 0115 7.125V5.25zM4.875 6H6v10.125A3.375 3.375 0 009.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V7.875C3 6.839 3.84 6 4.875 6z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div aria-hidden="true" class="absolute top-[4.80rem] -left-2.5 z-[1] my-auto h-max w-max md:inset-y-0 lg:relative lg:ml-2.5 lg:-mr-2.5">
+                                <div class="h-5 w-5 rounded-full border-8 border-white bg-purple-600 ring-1 ring-gray-400/70 dark:border-darker dark:bg-white dark:ring-gray-700"></div>
+                            </div>
+                            <div class="">
+                                <span class="text-gray-500">2020</span>
+                                <h3 class="mt-0.5 text-xl font-semibold text-gray-700 dark:text-white">Grwown the team</h3>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <img class="h-56 w-full rounded-2xl object-cover md:h-80" src="./../images/steps/step2.webp" alt="timeline first step" loading="lazy" width="1165" height="864">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="my-3.5 -ml-8 h-16 w-16 rotate-45 rounded-bl-full rounded-tr-3xl border border-dashed border-gray-400/70 dark:border-gray-700 lg:ml-[7.15rem]"></div>
+                        <div>
+                            <span class="text-gray-700 dark:text-white">5 Developers joined the <a href="customers.html" class="text-primary underline dark:text-primaryLight">Team</a> !</span>
+                            <div class="mt-5 flex -space-x-1 children:h-10 children:w-10 children:rounded-full children:object-cover children:ring-4 children:ring-gray-100 dark:children:ring-darker">
+                                <img src="./../images/avatars/avatar-1.webp" alt="user avatar" loading="lazy" width="200" height="200">
+                                <img src="./../images/avatars/avatar-2.webp" alt="user avatar" loading="lazy" width="200" height="200">
+                                <img src="./../images/avatars/avatar-3.webp" alt="user avatar" loading="lazy" width="200" height="200">
+                                <img src="./../images/avatars/avatar-4.webp" alt="user avatar" loading="lazy" width="200" height="200">
+                                <img src="./../images/avatars/avatar.webp" alt="user avatar" loading="lazy" width="400" height="400">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-10 py-12 pl-6 after:absolute after:inset-0 after:h-full after:w-px after:border-r after:border-dashed after:border-gray-400/70 dark:after:border-gray-700 sm:pl-12 md:flex-row md:py-20 lg:pl-0 lg:after:left-[9.1rem]">
+                        <div class="flex w-full flex-col gap-10 md:w-1/2 lg:flex-row lg:items-center">
+                            <div class="hidden w-max md:block">
+                                <div class="flex h-24 w-24 rounded-full border border-gray-200 bg-white p-4 shadow-xl shadow-gray-600/10 dark:border-gray-800 dark:bg-gray-900 dark:shadow-none">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-auto h-6 w-6 text-primary dark:text-blue-300">
+                                        <path class="text-primaryLight" fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd"></path>
+                                        <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div aria-hidden="true" class="absolute top-[4.80rem] -left-2.5 z-[1] my-auto h-max w-max md:inset-y-0 lg:relative lg:ml-2.5 lg:-mr-2.5">
+                                <div class="h-5 w-5 rounded-full border-8 border-white bg-primary ring-1 ring-gray-400/70 dark:border-darker dark:bg-white dark:ring-gray-700"></div>
+                            </div>
+                            <div class="">
+                                <span class="text-gray-500">2021</span>
+                                <h3 class="mt-0.5 text-xl font-semibold text-gray-700 dark:text-white">Startup of the year</h3>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <img class="h-56 w-full rounded-2xl object-cover md:h-80" src="./../images/steps/step3.webp" alt="timeline third step" loading="lazy" width="1165" height="864">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div aria-hidden="true" class="my-3.5 -ml-8 h-16 w-16 rotate-45 rounded-bl-full rounded-tr-3xl border border-dashed border-gray-400/70 dark:border-gray-700 lg:ml-[7.15rem]"></div>
+                        <div class="w-10/12">
+                            <span class="text-gray-700 dark:text-white">Worked with 5 world leading <a href="customers.html" class="text-primary underline dark:text-primaryLight">companies</a> !</span>
+                            <div class="mt-5 flex w-full justify-between gap-6 brightness-200 contrast-0 grayscale lg:gap-x-24">
+                                <img class="h-8 w-auto md:h-10 lg:w-auto" src="./../images/clients/airbnb.svg" loading="lazy" alt="airbnb" width="" height="">
+                                <img class="h-8 w-auto md:h-10 lg:w-auto" src="./../images/clients/coty.svg" loading="lazy" alt="coty" width="" height="">
+                                <img class="h-8 w-auto md:h-10 lg:w-auto" src="./../images/clients/ge.svg" loading="lazy" alt="ge" width="" height="">
+                                <img class="hidden h-8 w-auto sm:block md:h-10 lg:w-auto" src="./../images/clients/lilly.png" loading="lazy" alt="lilly" width="" height="">
+                                <img class="hidden h-8 w-auto sm:block md:h-10 lg:w-auto" src="./../images/clients/microsoft.svg" loading="lazy" alt="microsoft" width="" height="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col items-center gap-10 py-12 pl-6 before:absolute before:inset-x-0 before:bottom-0 before:h-1/2 before:w-px before:bg-gradient-to-t before:from-transparent before:to-gray-400/70 after:absolute after:inset-0 after:top-0 after:h-1/2 after:w-px after:border-r after:border-dashed after:border-gray-400/70 dark:before:to-gray-700 dark:after:border-gray-700 sm:pl-12 md:flex-row md:py-20 lg:pl-0 lg:before:left-[9.1rem] lg:after:left-[9.1rem]">
+                        <div class="flex w-full flex-col gap-10 md:w-1/2 lg:flex-row lg:items-center">
+                            <div class="hidden w-max md:block">
+                                <div class="flex h-24 w-24 rounded-full border border-gray-200 bg-white p-4 shadow-xl shadow-gray-600/10 dark:border-gray-800 dark:bg-gray-900 dark:shadow-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-auto h-6 w-6 text-yellow-700">
+                                        <path class="text-yellow-500" d="M12 .75a8.25 8.25 0 00-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 00.577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 01-.937-.171.75.75 0 11.374-1.453 5.261 5.261 0 002.626 0 .75.75 0 11.374 1.452 6.712 6.712 0 01-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 00.577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0012 .75z"></path>
+                                        <path fill-rule="evenodd" d="M9.013 19.9a.75.75 0 01.877-.597 11.319 11.319 0 004.22 0 .75.75 0 11.28 1.473 12.819 12.819 0 01-4.78 0 .75.75 0 01-.597-.876zM9.754 22.344a.75.75 0 01.824-.668 13.682 13.682 0 002.844 0 .75.75 0 11.156 1.492 15.156 15.156 0 01-3.156 0 .75.75 0 01-.668-.824z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-[4.80rem] -left-2.5 z-[1] my-auto h-max w-max md:inset-y-0 lg:relative lg:ml-2.5 lg:-mr-2.5">
+                                <div class="h-5 w-5 rounded-full border-8 border-white bg-yellow-600 ring-1 ring-gray-400/70 dark:border-darker dark:bg-white dark:ring-gray-700"></div>
+                            </div>
+                            <div class="">
+                                <span class="text-gray-500">2022</span>
+                                <h3 class="mt-0.5 text-xl font-semibold text-gray-700 dark:text-white">Founded by Bernard Ng</h3>
+                                <p class="mt-2 text-gray-600 dark:text-gray-400">Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia</p>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <img class="h-56 w-full rounded-2xl object-cover md:h-80" src="./../images/steps/step4.webp" alt="timeline fourth step" loading="lazy" width="1165" height="864">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

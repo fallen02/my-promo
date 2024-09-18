@@ -1,0 +1,27 @@
+---
+import ContactUs from '@/components/ContactUs.astro';
+import Layout from '../layouts/Layout.astro';
+import HomeAbout from '@/components/HomeAbout.astro';
+import HomeFormula from '@/components/HomeFormula.astro';
+import HomeServices from '@/components/HomeServices.astro';
+---
+
+<Layout title="Welcome to MyPromo">
+	<main>
+		<HomeAbout />
+		<HomeFormula />
+		<HomeServices />
+		<ContactUs />
+	</main>
+</Layout>
+
+<!-- <script>
+import { animate, scroll } from "motion";
+
+document.querySelectorAll("section > div").forEach((item) => {
+  scroll(animate(item, { opacity: [0, 1, 1, 0] }), {
+    target: item,
+    offset: ["start end", "end end", "start start", "end start"]
+  });
+});
+</script> -->

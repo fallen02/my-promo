@@ -1,0 +1,63 @@
+---
+import idea from '@/assets/icons/idea.svg'
+import { Image } from 'astro:assets'
+---
+
+<div class="min-h-screen pt-16 pb-10 md:pt-15">
+  <div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
+    <!-- <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+            <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
+            <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
+        </div> -->
+    <div class="">
+      <h2
+        class="text-left text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"
+      >
+        Shaped to meet your needs
+      </h2>
+      <!-- <p class="mt-4 text-center text-gray-600 dark:text-gray-300">apiente optio repellendus atque illum odio! Fugiat at expedita deserunt dolorum molestias.</p> -->
+    </div>
+
+    <div class="mt-1 md:mt-5 backdrop-blur-xl  lg:flexrow  md:flex-col-reverse">
+      <div class="relative w-[55%]">
+        <div
+          class=" absolute md:hidden top-0 -left-4 w-72 h-72 bg-purple-300/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+        >
+        </div>
+        <div
+          class=" absolute md:hidden top-0 -right-4 w-72 h-72 bg-yellow-300/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+        >
+        </div>
+        <div
+          class=" absolute md:hidden -bottom-8 left-20 w-72 h-72 bg-pink-300/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
+        >
+        </div>
+        <div class="m-8 relative space-y-4">
+          <div class="p-5 bg-primary-foreground rounded-lg flex items-center justify-between space-x-8">
+            <div class="flex flex-1 gap-4">
+              <div class="bg-red-400">
+                <Image 
+                src={idea}
+                alt="idea"
+                width={24}
+              
+              />
+              </div>
+              <p>Out-of-the-box ideas that get noticed</p>
+            </div>
+          </div>
+          <div class="p-5 bg-primary-foreground rounded-lg flex items-center justify-between space-x-8">
+            <p>We transform numbers into magic</p>
+          </div>
+          <div class="p-5 bg-primary-foreground rounded-lg flex items-center justify-between space-x-8">
+            <p>Always ahead of the curve</p>
+          </div>
+          <div class="p-5 bg-primary-foreground rounded-lg flex items-center justify-between space-x-8">
+            <p>We’re not just your partners; we’re your biggest fans!</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-[45%]">Content</div>
+    </div>
+  </div>
+</div>

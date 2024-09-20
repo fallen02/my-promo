@@ -1,8 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import pieImage from "../assets/images/pie.svg";
+import { icons } from '@/assets'
 ---
-<div class="py-10">
+<!-- <div class="py-10">
     <div class="relative xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
       <div class="absolute inset-0 hidden h-max dark:block lg:my-auto">
         <div aria-hidden="true" class="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-70 2xl:mx-auto 2xl:max-w-6xl">
@@ -49,7 +50,7 @@ fill: #957fef
               </div>
               <div class="w-5/6">
                 <h4 class="font-semibold text-xl text-gray-700 dark:text-indigo-300">Fuelled by technology</h3>
-                <!-- <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p> -->
+                
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
@@ -60,16 +61,78 @@ fill: #957fef
               </div>
               <div class="w-5/6">
                 <h4 class="font-semibold text-xl text-gray-700 dark:text-teal-300">Inspired by creativity</h3>
-                <!-- <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p> -->
+                
               </div> 
             </div> 
           </div>
         </div>
       </div>
     </div>
-</div>
+</div> -->
 
-<script>
+<section class="mt-32">
+  <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+      <div class="mt-5">
+          <div class="gap-6 space-y-12 md:flex md:space-y-0">
+              <div class="relative md:w-1/2">
+                  <div class=" visible inset-0 flex scale-100 flex-col justify-center opacity-100 transition duration-500 md:absolute">
+                      <div>
+                          <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-2xl lg:text-3xl">Welcome to <span class="text-4xl font-suse lg:text-4xl md:3xl">MyPromo</span></h3>
+                          <h1 class="text-2xl lg:text-3xl md:2xl">To Get You High!</h1>
+                          <p class="mt-8 text-gray-600 dark:text-gray-300">We turn your digital dreams into groovy realities! Are you ready to jazz up your brand and rock the internet? You’ve landed at the right place. We blend creativity, strategy, team effort and a whole lot of positivity to make your brand shine brighter like STARS! 
+                            MyPromo delivers authentic stories in: India, USA and Dubai. We always try our fullest to get our lovely clients high. At MyPromo your brand is
+                            </p>
+                          <div class="mt-5 flex flex-col gap-6">
+                              <div class="flex items-center gap-6">
+                                  <div class="flex h-14 w-14 rounded-full border border-gray-200 bg-white p-2 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                      <!-- <img class="m-auto h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png" alt="icon illustration" loading="lazy" width="512" height="512"> -->
+                                      <Image 
+                                        src={icons.idea}
+                                        alt="idea"
+                                        class={"m-auto h-8 w-auto"}
+                                      />
+                                  </div>
+                                  <div class="w-[calc(100%-7.5rem)]">
+                                      <h4 class="text-2xl font-suse font-semibold text-gray-800 dark:text-yellow-200 lg:text-3xl">Fuelled by Technology
+                                      </h4>
+                                      <!-- <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo perspiciatis delectus atque autem!</p> -->
+                                  </div>
+                              </div>
+
+                              <div class="flex items-center gap-6">
+                                  <div class="flex h-14 w-14 rounded-full border border-gray-200 bg-white p-2 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                      <!-- <img class="m-auto h-8 w-auto" src="https://cdn-icons-png.flaticon.com/512/584/584796.png" alt="icon illustration" loading="lazy" width="512" height="512"> -->
+                                      <Image 
+                                      src={icons.technology}
+                                      alt="Technology"
+                                      class={"m-auto h-8 w-auto"}
+                                    />
+                                  </div>
+                                  <div class="w-[calc(100%-7.5rem)]">
+                                      <h4 class="text-2xl font-suse font-semibold text-gray-800 dark:text-green-200 lg:text-3xl">Inspired by Creativity
+                                      </h4>
+                                      <!-- <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem accusantium nemo perspiciatis delectus atque autem!</p> -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 md:w-1/2 md:overflow-visible md:px-0">
+                  <div class="relative  before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200  dark:before:border-gray-700 dark:after:border-gray-700">
+                      <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
+                          <div  class="panel-preview absolute pb-5 inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
+                              <Image src={pieImage} class="w-full " alt="tailus screenshot" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- <script>
 import { inView, animate } from 'motion'
 
 inView("#idk", ({target}) => {
@@ -85,5 +148,5 @@ inView("#idk", ({target}) => {
 
 console.log("Hello")
 
-</script>
+</script> -->
                                       

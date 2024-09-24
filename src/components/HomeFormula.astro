@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets"
 import Cta from "./Cta.astro"
+import { images } from "@/assets"
 ---
 
 <div class="relative pt-16 pb-10 md:pt-15">
@@ -23,7 +25,7 @@ import Cta from "./Cta.astro"
                 </div>
                 <div>
                     <div class="relative flex h-full flex-col items-center justify-center gap-6 p-8 py-16 lg:py-8">
-                        <img class="w-16" src="/images/xp.webp" alt="xp icon illustration" width="512" height="512" loading="lazy">
+                        <Image class="w-16" src={images.xp} alt="xp icon illustration" width="512" height="512" loading="lazy">
                         <div class="mx-auto text-center sm:w-2/5">
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Our Formula</h2>
                             <p class="mt-3 text-gray-600 dark:text-gray-400">Dolorem aliquid officiis quae ipsum nobis libero alias Iure nobis dicta.</p>

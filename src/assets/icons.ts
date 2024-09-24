@@ -12,6 +12,8 @@ import contentMarketing from './icons/content-marketing.png'
 import collabMembership from './icons/membership.png'
 import salesforce from './icons/salesforce.png'
 
+import animated_Versetile from './icons/versatile.gif'
+
 
 export default { 
     idea, 
@@ -26,5 +28,7 @@ export default {
     contentWriting,
     contentMarketing,
     collabMembership,
-    salesforce
+    salesforce,
+    
+    animated_Versetile
 }

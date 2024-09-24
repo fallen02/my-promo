@@ -1,0 +1,64 @@
+---
+import ContactForm from "@/components/ContactForm.astro";
+import Container from "@/components/Container.astro";
+import Layout from "@/layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Contact">
+  <div class="relative">
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 top-0 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30 z-0"
+    >
+      <div
+        class="h-56 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700 z-0"
+      >
+      </div>
+      <div
+        class="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600 z-0"
+      >
+      </div>
+    </div>
+    <div
+      class="mx-auto px-4 pt-16 sm:px-12 sm:pt-40 md:pt-48 lg:pt-10 xl:max-w-6xl xl:px-0"
+    >
+      <div class="mt-6 text-center z-10">
+        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          Contact Us
+        </h1>
+        <p class="text-lg mt-4 text-gray-500 mx-auto max-w-xl">
+          Got Questions? We are here to help.
+        </p>
+      </div>
+    </div>
+</div>
+  <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 mb-32 z-20">
+    <div>
+      <h2 class="font-medium text-2xl text-white">Contact MyPromo</h2>
+      <p class="text-lg leading-relaxed text-gray-500 mt-3">
+        Ready to revolutionize your brand? Get in touch and let’s start the funk
+        party!
+      </p>
+      <div class="mt-5">
+        <!-- <div class="flex items-center mt-2 space-x-2 text-gray-600">
+          <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+          <span>1734 Sanfransico, CA 93063</span>
+        </div> -->
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">
+          <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" />
+          <a href="mailto:hello@astroshipstarter.com">
+            hello@astroshipstarter.com
+          </a>
+        </div>
+        <div class="flex items-center mt-2 space-x-2 text-gray-600">
+          <Icon class="text-gray-400 w-4 h-4" name="uil:phone" />
+          <a href="tel:+1 (987) 4587 899">+1 (987) 4587 899</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ContactForm />
+    </div>
+  </div>
+</Layout>

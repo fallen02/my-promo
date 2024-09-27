@@ -1,73 +1,49 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { images } from "@/assets";
-import BaseServicease from "@/components/services/BaseServices.astro";
+import BaseServices from "@/components/services/BaseServices.astro";
 
-const webDev_services = [
+const cmembership_services = [
   {
-    title: "Custom Website Design",
-    content: "We craft bespoke website designs that reflect your brand’s identity and resonate with your target audience. Our designs are user-friendly, visually appealing, and tailored to meet your specific business needs.",
+    title: "Salesforce Implementation",
+    content:
+      " Start your Salesforce journey with confidence. We guide you through the entire implementation process, from setup to launch, ensuring a smooth transition.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Responsive Design",
-    content: "In today’s mobile-driven world, having a responsive website is crucial. We ensure that your site performs flawlessly across all devices and screen sizes, providing a seamless experience for users on desktop, tablet, and mobile.",
+    title: "Customization & Development",
+    content:
+      "Our team customizes Salesforce to meet the unique demands of your business, building tailored solutions that improve workflow and drive efficiency.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "E-Commerce Solutions",
-    content: "For businesses looking to sell online, we offer robust e-commerce development services. From product listings and shopping carts to secure payment gateways and inventory management, we build platforms that enhance the shopping experience and drive sales.",
+    title: "Salesforce Integrations",
+    content:
+      "Connect Salesforce to your other business tools, such as marketing platforms, e-commerce systems, or customer service software, for a streamlined, all-in-one solution.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Content Management Systems",
-    content: "We specialize in popular CMS platforms like WordPress, Joomla, and Drupal, providing you with the tools to easily manage and update your website content. Our CMS solutions are intuitive, scalable, and tailored to your needs.",
+    title: "Data Migration",
+    content:
+      "Moving your data into Salesforce can be a daunting task. We ensure a seamless, secure migration of your existing data into the Salesforce ecosystem with minimal disruption.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "SEO Optimization",
-    content: "A well-designed website is only effective if it’s visible. Our development process includes on-page SEO optimization to improve your site’s search engine rankings and drive organic traffic.",
+    title: "Training & Support",
+    content:
+      "Our team provides comprehensive training for your staff, so they can get the most out of Salesforce. We also offer ongoing support to address any issues or challenges you face.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
-  {
-    title: "Website Maintenance and Support",
-    content: "Keeping your website updated and running smoothly is essential. We offer ongoing maintenance and support services to ensure that your site remains secure, functional, and up-to-date with the latest technology.",
-    image: images.webdev_1,
-    divider: true
-  },
-  {
-    title: "Performance Optimization",
-    content: "We focus on optimizing your website’s performance, including fast loading times, smooth navigation, and efficient code. Our goal is to enhance user experience and reduce bounce rates.",
-    image: images.webdev_1,
-    divider: false
-  },
-  {
-    title: "Integration Services",
-    content: "Whether you need to integrate with third-party tools, CRM systems, or marketing platforms, we ensure seamless connectivity to streamline your operations and enhance functionality.",
-    image: images.webdev_1,
-    divider: true
-  },
-  {
-    title: "UI/UX Design",
-    content: "Our team emphasizes user experience (UX) and user interface (UI) design to ensure that your website is not only visually engaging but also easy to navigate and interact with.",
-    image: images.webdev_1,
-    divider: false
-  },
-  {
-    title: "Analytics and Reporting",
-    content: "We implement analytics tools to track your website’s performance, gather insights, and provide regular reports. This data helps in making informed decisions and optimizing your online strategy.",
-    image: images.webdev_1,
-    divider: true
-  },
-]
+ 
+];
 ---
 
-<Layout title="MyPromo | Web Development">
+<Layout title="MyPromo | Salesforce CRM">
   <section class="relative">
     <div
       aria-hidden="true"
@@ -88,36 +64,30 @@ const webDev_services = [
       <div class="relative z-10">
         <div class="flex flex-col">
           <h1
-            class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl md:text-left lg:text-7xl"
+            class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl md:text-left lg:text-6xl"
           >
-            Website <span
+            <span
               class="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-yellow-700"
             >
-              Development
+            Salesforce CRM
             </span>
           </h1>
-          <h2 class="mt-6 text-2xl font-suse font-semibold text-gray-600 dark:text-gray-300">
-            Transform Your Online Presence with Website Development Expert
-          </h2>
+          <!-- <h2
+            class="mt-6 text-2xl font-suse font-semibold text-gray-600 dark:text-gray-300"
+          >
+          Unlock Exclusive Benefits with Our Collab Membership
+          </h2> -->
           <p
             class="mt-6 text-center text-lg font-suse text-gray-600 dark:text-gray-300 sm:text-xl md:text-left lg:w-3/4"
           >
-            At MyPromo we understand that your website is the digital storefront
-            of your business. Our comprehensive website development services are
-            designed to create an online presence that not only captures your
-            brand's essence but also drives engagement and conversion.
+          At MyPromo, we are dedicated to helping businesses like yours unlock the full potential of Salesforce. Our expertise in Salesforce implementation, customization, and optimization allows us to deliver tailored CRM solutions that drive sales growth, enhance customer relationships, and streamline your operations. Whether you’re new to Salesforce or looking to take your existing setup to the next level, we have the tools, knowledge, and experience to make it happen.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
-  {
-    webDev_services.map((service) => (
-      <BaseServicease serviceProps = {service}/>
-    ))
-  }
-  
+
+  {cmembership_services.map((service) => <BaseServices serviceProps={service} />)}
 
   <!-- Cta -->
   <section class="mt-10 mb-16">
@@ -166,15 +136,16 @@ const webDev_services = [
         <h2
           class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-6xl"
         >
-        Get Started <span class="bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-700">Today</span> 
+        Ready to Transform 
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-700"
+            >Your Business
+          </span>
         </h2>
         <p
           class="mb-12 mt-6 text-gray-600 dark:text-gray-300 md:mx-auto md:w-5/6 lg:w-full"
         >
-          Ready to elevate your digital marketing? Let’s work together to
-          achieve your goals and create impactful results. Contact us today to
-          discover how MyPromo can help your business grow and succeed in the
-          digital world.
+        Let MyPromo help you harness the full power of Salesforce. Contact us today for a free consultation and start your journey toward smarter CRM solutions, improved sales processes, and stronger customer relationships.
         </p>
         <a
           href="contact.html"

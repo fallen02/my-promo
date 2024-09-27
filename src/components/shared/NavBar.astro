@@ -2,10 +2,9 @@
 import Container from "../Container.astro";
 import Link from "../link.astro";
 import Dropdown from "./dropdown.astro";
-import { Astronav, MenuItems, MenuIcon, StickyHeader } from "astro-navbar";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Image } from "astro:assets";
 import logo from '@/assets/images/logo.png'
-// import { TRANSITION_AFTER_PREPARATION } from "astro:transitions/client";
 
 const menuitems = [
   {
@@ -20,10 +19,17 @@ const menuitems = [
     title: "Services",
     path: "/about",
     children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
+      { title: "Web Devlopment", path: "/service/webdev" },
+      { title: "Search Engine Optimization", path: "/service/seo" },
+      { title: "Social Media Marketing", path: "/service/marketing" },
+      { title: "Graphic Design", path: "/service/graphicsdesign" },
+      { title: "Lead Generation", path: "/service/leadgeneration" },
+      { title: "Marketing Automation", path: "/service/mautomation" },
+      { title: "AI Enhanced Optimization", path: "/service/aioptimization" },
+      { title: "Content Writing", path: "/service/contentwriting" },
+      { title: "Content Marketing", path: "/service/cmarketing" },
+      { title: "Collab Membership", path: "/service/cmembership" },
+      { title: "Salesforce", path: "/service/salesforce" },
     ],
   },
   {
@@ -79,11 +85,11 @@ const menuitems = [
                   </>
                 ))
               }
-            </ul>
+            <!-- </ul>
             <div class="lg:hidden flex items-center mt-3 gap-4">
   
               <Link href="#" size="md" block>Sign up</Link>
-            </div>
+            </div> -->
   
           </MenuItems>
   

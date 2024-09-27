@@ -1,73 +1,83 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { images } from "@/assets";
-import BaseServicease from "@/components/services/BaseServices.astro";
+import BaseServices from "@/components/services/BaseServices.astro";
 
-const webDev_services = [
+const cwriting_services = [
   {
-    title: "Custom Website Design",
-    content: "We craft bespoke website designs that reflect your brand’s identity and resonate with your target audience. Our designs are user-friendly, visually appealing, and tailored to meet your specific business needs.",
+    title: "Website Content",
+    content:
+      " Develop engaging and SEO-friendly content for your website, including homepage, about us, services, and product descriptions. Enhance your online presence and convert visitors into customers.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Responsive Design",
-    content: "In today’s mobile-driven world, having a responsive website is crucial. We ensure that your site performs flawlessly across all devices and screen sizes, providing a seamless experience for users on desktop, tablet, and mobile.",
+    title: "Blog Posts and Articles",
+    content:
+      "Create informative, relevant, and well-researched blog posts and articles that position your brand as an industry authority. Drive traffic and engage your audience with valuable insights.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "E-Commerce Solutions",
-    content: "For businesses looking to sell online, we offer robust e-commerce development services. From product listings and shopping carts to secure payment gateways and inventory management, we build platforms that enhance the shopping experience and drive sales.",
+    title: "Social Media Content",
+    content:
+      "Craft compelling social media posts and updates that resonate with your audience. Boost engagement and grow your following with tailored content for each platform.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Content Management Systems",
-    content: "We specialize in popular CMS platforms like WordPress, Joomla, and Drupal, providing you with the tools to easily manage and update your website content. Our CMS solutions are intuitive, scalable, and tailored to your needs.",
+    title: "Email Newsletters",
+    content:
+      "Write persuasive email newsletters that capture your audience’s interest and drive action. Whether for promotional campaigns or regular updates, ensure your emails are effective and engaging.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "SEO Optimization",
-    content: "A well-designed website is only effective if it’s visible. Our development process includes on-page SEO optimization to improve your site’s search engine rankings and drive organic traffic.",
+    title: "White Papers and Ebooks",
+    content:
+      "Produce in-depth white papers and ebooks that provide valuable information and establish your brand as a thought leader. Generate leads and build credibility with well-researched content.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Website Maintenance and Support",
-    content: "Keeping your website updated and running smoothly is essential. We offer ongoing maintenance and support services to ensure that your site remains secure, functional, and up-to-date with the latest technology.",
+    title: "Press Releases",
+    content:
+      "Write professional press releases that effectively communicate your news and updates. Gain media coverage and enhance your brand’s visibility with compelling and newsworthy content.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "Performance Optimization",
-    content: "We focus on optimizing your website’s performance, including fast loading times, smooth navigation, and efficient code. Our goal is to enhance user experience and reduce bounce rates.",
+    title: "Product Descriptions",
+    content:
+      "Create detailed and persuasive product descriptions that highlight features and benefits. Increase conversions and drive sales with content that appeals to your target audience.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Integration Services",
-    content: "Whether you need to integrate with third-party tools, CRM systems, or marketing platforms, we ensure seamless connectivity to streamline your operations and enhance functionality.",
+    title: "Case Studies",
+    content:
+      "Develop insightful case studies that showcase your successes and demonstrate your expertise. Build trust with potential clients by highlighting real-world results and testimonials.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "UI/UX Design",
-    content: "Our team emphasizes user experience (UX) and user interface (UI) design to ensure that your website is not only visually engaging but also easy to navigate and interact with.",
+    title: "Copywriting",
+    content:
+      "Craft persuasive and impactful copy for advertisements, landing pages, and promotional materials. Drive conversions and capture attention with well-written, engaging content.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Analytics and Reporting",
-    content: "We implement analytics tools to track your website’s performance, gather insights, and provide regular reports. This data helps in making informed decisions and optimizing your online strategy.",
+    title: "SEO Content",
+    content:
+      "Optimize your content for search engines with strategic keyword integration, meta descriptions, and compelling headlines. Improve your search engine rankings and attract organic traffic.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
-]
+];
 ---
 
-<Layout title="MyPromo | Web Development">
+<Layout title="MyPromo | Marketing Automation">
   <section class="relative">
     <div
       aria-hidden="true"
@@ -88,36 +98,33 @@ const webDev_services = [
       <div class="relative z-10">
         <div class="flex flex-col">
           <h1
-            class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl md:text-left lg:text-7xl"
+            class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl md:text-left lg:text-6xl"
           >
-            Website <span
+            <span
               class="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-yellow-700"
             >
-              Development
+              Content Writing
             </span>
           </h1>
-          <h2 class="mt-6 text-2xl font-suse font-semibold text-gray-600 dark:text-gray-300">
-            Transform Your Online Presence with Website Development Expert
+          <h2
+            class="mt-6 text-2xl font-suse font-semibold text-gray-600 dark:text-gray-300"
+          >
+            Elevate Your Brand with Professional Content Writing
           </h2>
           <p
             class="mt-6 text-center text-lg font-suse text-gray-600 dark:text-gray-300 sm:text-xl md:text-left lg:w-3/4"
           >
-            At MyPromo we understand that your website is the digital storefront
-            of your business. Our comprehensive website development services are
-            designed to create an online presence that not only captures your
-            brand's essence but also drives engagement and conversion.
+            At MyPromo, we specialize in crafting high-quality content that
+            captures attention, engages readers, and drives results. Our content
+            writing services are designed to enhance your brand’s voice, convey
+            your message effectively, and support your business goals.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
-  {
-    webDev_services.map((service) => (
-      <BaseServicease serviceProps = {service}/>
-    ))
-  }
-  
+
+  {cwriting_services.map((service) => <BaseServices serviceProps={service} />)}
 
   <!-- Cta -->
   <section class="mt-10 mb-16">
@@ -166,15 +173,17 @@ const webDev_services = [
         <h2
           class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-6xl"
         >
-        Get Started <span class="bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-700">Today</span> 
+          Ready to take your
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-700"
+            >content to the next level
+          </span>
         </h2>
         <p
           class="mb-12 mt-6 text-gray-600 dark:text-gray-300 md:mx-auto md:w-5/6 lg:w-full"
         >
-          Ready to elevate your digital marketing? Let’s work together to
-          achieve your goals and create impactful results. Contact us today to
-          discover how MyPromo can help your business grow and succeed in the
-          digital world.
+          Contact us today to explore how our professional content writing
+          services can enhance your brand’s message and drive results.
         </p>
         <a
           href="contact.html"

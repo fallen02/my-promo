@@ -1,0 +1,24 @@
+---
+import WithDivider from "./WithDivider.astro"
+import WithoutDivider from "./WithoutDivider.astro"
+
+interface serviceProps {
+    title: string
+    content: string
+    image: ImageMetadata
+    divider: boolean
+}
+
+const { serviceProps } = Astro.props
+---
+<div class="mt-24">
+  {
+    serviceProps.divider ? 
+    <WithDivider {...serviceProps} /> 
+    : 
+    <WithoutDivider {...serviceProps} />
+  }
+</div>
+
+
+

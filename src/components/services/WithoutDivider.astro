@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  title: string;
+  content: string;
+  image: ImageMetadata;
+}
+
+const { title, content, image } = Astro.props;
+---
+
+
+<section
+  class="pt-16 lg:pt-5 dark:border-gray-800 md:pt-32"
+>
+  <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+    <div
+      class="items-center md:flex  justify-center space-y-3 md:gap-6 md:space-y-0"
+    >
+      <div class="md:w-1/2 lg:w-2/5">
+        <Image
+          class="h-full rounded-3xl object-cover md:-ml-8"
+          src={image}
+          alt={title}
+          loading="eager"
+          width={600}
+          height={600}
+        />
+      </div>
+      <div class="md:w-1/2">
+        <span
+          class="text-sm font-semibold font-suse uppercase tracking-widest text-primary dark:text-secondaryLight"
+          >What We Do
+        </span>
+        <h2
+          class="my-8 text-4xl font-bold text-gray-900 dark:text-white lg:text-4xl"
+        >
+          {title}
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          {content}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

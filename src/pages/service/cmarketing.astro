@@ -1,73 +1,83 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { images } from "@/assets";
-import BaseServicease from "@/components/services/BaseServices.astro";
+import BaseServices from "@/components/services/BaseServices.astro";
 
-const webDev_services = [
+const cwriting_services = [
   {
-    title: "Custom Website Design",
-    content: "We craft bespoke website designs that reflect your brand’s identity and resonate with your target audience. Our designs are user-friendly, visually appealing, and tailored to meet your specific business needs.",
+    title: "Content Strategy Development",
+    content:
+      "Create a robust content marketing strategy tailored to your business goals, target audience, and industry trends. Define objectives, key messages, and content formats that will drive success.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Responsive Design",
-    content: "In today’s mobile-driven world, having a responsive website is crucial. We ensure that your site performs flawlessly across all devices and screen sizes, providing a seamless experience for users on desktop, tablet, and mobile.",
+    title: "Content Creation",
+    content:
+      "Develop high-quality content that resonates with your audience and aligns with your brand’s voice. This includes blog posts, articles, infographics, videos, and more.",
     image: images.webdev_1,
-    divider: true
-  },
-  {
-    title: "E-Commerce Solutions",
-    content: "For businesses looking to sell online, we offer robust e-commerce development services. From product listings and shopping carts to secure payment gateways and inventory management, we build platforms that enhance the shopping experience and drive sales.",
-    image: images.webdev_1,
-    divider: false
-  },
-  {
-    title: "Content Management Systems",
-    content: "We specialize in popular CMS platforms like WordPress, Joomla, and Drupal, providing you with the tools to easily manage and update your website content. Our CMS solutions are intuitive, scalable, and tailored to your needs.",
-    image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
     title: "SEO Optimization",
-    content: "A well-designed website is only effective if it’s visible. Our development process includes on-page SEO optimization to improve your site’s search engine rankings and drive organic traffic.",
+    content:
+      "Optimize content for search engines to improve visibility and drive organic traffic. Implement strategic keyword integration, meta descriptions, and SEO best practices to enhance search rankings.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Website Maintenance and Support",
-    content: "Keeping your website updated and running smoothly is essential. We offer ongoing maintenance and support services to ensure that your site remains secure, functional, and up-to-date with the latest technology.",
+    title: "Content Distribution",
+    content:
+      "Ensure your content reaches the right audience through strategic distribution channels. Utilize social media, email marketing, and partnerships to maximize reach and engagement.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "Performance Optimization",
-    content: "We focus on optimizing your website’s performance, including fast loading times, smooth navigation, and efficient code. Our goal is to enhance user experience and reduce bounce rates.",
+    title: "Social Media Management",
+    content:
+      "Manage and execute content on social media platforms to boost engagement, grow your audience, and drive traffic to your website. Create and schedule posts, interact with followers, and analyze performance.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
-    title: "Integration Services",
-    content: "Whether you need to integrate with third-party tools, CRM systems, or marketing platforms, we ensure seamless connectivity to streamline your operations and enhance functionality.",
+    title: "Email Marketing Campaigns",
+    content:
+      "Design and implement email marketing campaigns that deliver valuable content directly to your audience’s inbox. Develop newsletters, promotional emails, and automated sequences to nurture leads and retain customers.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
   {
-    title: "UI/UX Design",
-    content: "Our team emphasizes user experience (UX) and user interface (UI) design to ensure that your website is not only visually engaging but also easy to navigate and interact with.",
+    title: "Content Curation",
+    content:
+      "Curate relevant and valuable content from industry sources to complement your original content. Share curated content to provide additional value to your audience and establish thought leadership.",
     image: images.webdev_1,
-    divider: false
+    divider: false,
   },
   {
     title: "Analytics and Reporting",
-    content: "We implement analytics tools to track your website’s performance, gather insights, and provide regular reports. This data helps in making informed decisions and optimizing your online strategy.",
+    content:
+      "Monitor and measure the performance of your content marketing efforts using advanced analytics tools. Track key metrics such as engagement, traffic, and conversion rates to refine your strategy and improve results.",
     image: images.webdev_1,
-    divider: true
+    divider: true,
   },
-]
+  {
+    title: "Content Repurposing",
+    content:
+      "Maximize the value of your content by repurposing it into various formats. Transform blog posts into infographics, videos, or social media posts to reach different segments of your audience.",
+    image: images.webdev_1,
+    divider: false,
+  },
+  {
+    title: "Brand Storytelling",
+    content:
+      "Craft compelling brand stories that connect with your audience on an emotional level. Use storytelling techniques to convey your brand’s mission, values, and unique selling points.",
+    image: images.webdev_1,
+    divider: true,
+  },
+];
 ---
 
-<Layout title="MyPromo | Web Development">
+<Layout title="MyPromo | Marketing Automation">
   <section class="relative">
     <div
       aria-hidden="true"
@@ -88,36 +98,30 @@ const webDev_services = [
       <div class="relative z-10">
         <div class="flex flex-col">
           <h1
-            class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl md:text-left lg:text-7xl"
+            class="text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl md:text-left lg:text-6xl"
           >
-            Website <span
+            <span
               class="bg-clip-text text-transparent bg-gradient-to-br from-red-600 to-yellow-700"
             >
-              Development
+            Content Marketing 
             </span>
           </h1>
-          <h2 class="mt-6 text-2xl font-suse font-semibold text-gray-600 dark:text-gray-300">
-            Transform Your Online Presence with Website Development Expert
+          <h2
+            class="mt-6 text-2xl font-suse font-semibold text-gray-600 dark:text-gray-300"
+          >
+          Drive Engagement and Growth with Expert Content Marketing
           </h2>
           <p
             class="mt-6 text-center text-lg font-suse text-gray-600 dark:text-gray-300 sm:text-xl md:text-left lg:w-3/4"
           >
-            At MyPromo we understand that your website is the digital storefront
-            of your business. Our comprehensive website development services are
-            designed to create an online presence that not only captures your
-            brand's essence but also drives engagement and conversion.
+          At MyPromo, we specialize in content marketing strategies designed to captivate your audience, build brand authority, and drive measurable results. Our comprehensive approach ensures that your content not only reaches your target audience but also compels them to take action.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
-  {
-    webDev_services.map((service) => (
-      <BaseServicease serviceProps = {service}/>
-    ))
-  }
-  
+
+  {cwriting_services.map((service) => <BaseServices serviceProps={service} />)}
 
   <!-- Cta -->
   <section class="mt-10 mb-16">
@@ -166,15 +170,16 @@ const webDev_services = [
         <h2
           class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-6xl"
         >
-        Get Started <span class="bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-700">Today</span> 
+        Ready to elevate your 
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-700"
+            >content marketing strategy
+          </span>
         </h2>
         <p
           class="mb-12 mt-6 text-gray-600 dark:text-gray-300 md:mx-auto md:w-5/6 lg:w-full"
         >
-          Ready to elevate your digital marketing? Let’s work together to
-          achieve your goals and create impactful results. Contact us today to
-          discover how MyPromo can help your business grow and succeed in the
-          digital world.
+        Contact us today to learn how our content marketing services can help you engage your audience, build brand authority, and achieve your business goals.
         </p>
         <a
           href="contact.html"

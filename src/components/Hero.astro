@@ -100,7 +100,7 @@ import Image from 'astro/components/Image.astro'
 
 <script is:inline>
     const form_hero = document.getElementById("hero-form");
-    const result = document.getElementById("hero-submit");
+    const result2 = document.getElementById("hero-submit");
   
     form_hero.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -110,7 +110,7 @@ import Image from 'astro/components/Image.astro'
       
       console.log(json)
   
-      result.innerHTML = "Sending...";
+      result2.innerHTML = "Sending...";
   
       const headers = {
           "Content-Type": "application/json",
@@ -127,20 +127,20 @@ import Image from 'astro/components/Image.astro'
         .then(async (response) => {
           let json = await response.json();
           if (response.status == 200) {
-            result.innerHTML = "Successfully sent!";
+            result2.innerHTML = "Successfully sent!";
           } else {
             console.log(response);
-            result.innerHTML = "Failed";
+            result2.innerHTML = "Failed";
           }
         })
         .catch((error) => {
           console.log(error);
-          result.innerHTML = "Something went wrong!";
+          result2.innerHTML = "Something went wrong!";
         })
         .then(function () {
           form_hero.reset();
           setTimeout(() => {
-            result.innerHTML = "Get Started";
+            result2.innerHTML = "Get Started";
           }, 5000);
         });
     });

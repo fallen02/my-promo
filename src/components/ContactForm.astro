@@ -1,7 +1,5 @@
 
 <form
-  action="http://localhost:3000"
-  method="POST"
   id="form"
   class="needs-validation"
   novalidate
@@ -11,7 +9,7 @@
       type="text"
       placeholder="Full Name"
       required
-      class="w-full px-4 py-3 border bg-transparent placeholder:text-gray-800 rounded-md outline-none focus:ring-0 border-gray-300 focus:border-green-500 ring-gray-100"
+      class="w-full px-4 py-3 border bg-transparent placeholder:text-gray-500 rounded-md outline-none focus:ring-0 border-gray-300 focus:border-green-500 ring-gray-100"
       name="name"
     />
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -26,7 +24,7 @@
       placeholder="Email Address"
       name="email"
       required
-      class="w-full px-4 py-3 border bg-transparent placeholder:text-gray-800 rounded-md outline-none focus:ring-0 border-gray-300 focus:border-green-500 ring-gray-100"
+      class="w-full px-4 py-3 border bg-transparent placeholder:text-gray-500 rounded-md outline-none focus:ring-0 border-gray-300 focus:border-green-500 ring-gray-100"
     />
     <div class="empty-feedback text-red-400 text-sm mt-1">
       Please provide your email address.
@@ -40,7 +38,7 @@
       name="message"
       required
       placeholder="Your Message"
-      class="w-full px-4 py-3 border bg-transparent placeholder:text-gray-800 rounded-md outline-none focus:ring-0 border-gray-300 focus:border-green-500 ring-gray-100"
+      class="w-full px-4 py-3 border bg-transparent placeholder:text-gray-500 rounded-md outline-none focus:ring-0 border-gray-300 focus:border-green-500 ring-gray-100"
       
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -88,28 +86,32 @@
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
+    
+    console.log(object)
 
     result.innerHTML = "Sending...";
 
-    fetch("http://localhost:3000", {
-      method: "POST",
-      headers: {
+    const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "referer": "http://localhost:3000",
-      },
-      body: json,
+        "referer": "https://mypromo.in",
+      }
+
+    result.innerHTML = "Sending...";
+
+    fetch("https://email-api-qfi1.onrender.com/send", {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(object),
     })
       .then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
           result.classList.add("text-green-500");
-          result.innerHTML = json.message;
+          result.innerHTML = "Sent!";
         } else {
-          console.log(response);
           result.classList.add("text-red-500");
-          result.innerHTML = json.message;
+          result.innerHTML = "Failed to Send!";
         }
       })
       .catch((error) => {
@@ -121,6 +123,7 @@
         form.classList.remove("was-validated");
         setTimeout(() => {
           result.style.display = "none";
+          result.innerHTML = 'Send Message'
         }, 5000);
       });
   });
